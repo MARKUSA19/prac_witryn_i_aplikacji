@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Przyk³ad 1a</title>
+		<script language="JavaScript">
+			function WinOpen_kusaj()
+			{
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=720,width=1280,top=200,left=200")
+
+				<!-- obraz.html,				 strona do uruchomienia w nowym oknie -->
+				<!-- okienko,					 nazwa okna -->
+				<!-- toolbar=no,				 wyœwietlanie paska narzêdzi przegl¹darki -->
+				<!-- directories=no,			 przyciski nawigacyjne -->
+				<!-- menubar=no,				 wyœwietlanie paska menu -->
+				<!-- height=720,				 wysokoœæ okna -->
+				<!-- width=1280,				 szerokoœæ okna -->
+				<!-- top=200,					 pozycja okna od górnej krawêdzi ekranu -->
+				<!-- left=200";				 pozycja okna od lewej krawêdzi ekranu -->
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_kusaj(' ')">
+		</form>
+	</body>
+</html>
