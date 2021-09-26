@@ -1,0 +1,54 @@
+<textarea cols="150" rows="28">
+<html>
+	<head>
+		<title>Przyk³ad 1a</title>
+		<script language="JavaScript">
+			function WinOpen_kusaj()
+			{
+				window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=720,width=1280,top=200,left=200")
+
+				<!-- obraz.html,				 strona do uruchomienia w nowym oknie -->
+				<!-- okienko,					 nazwa okna -->
+				<!-- toolbar=no,				 wyœwietlanie paska narzêdzi przegl¹darki -->
+				<!-- directories=no,			 przyciski nawigacyjne -->
+				<!-- menubar=no,				 wyœwietlanie paska menu -->
+				<!-- height=720,				 wysokoœæ okna -->
+				<!-- width=1280,				 szerokoœæ okna -->
+				<!-- top=200,					 pozycja okna od górnej krawêdzi ekranu -->
+				<!-- left=200";				 pozycja okna od lewej krawêdzi ekranu -->
+			}
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen_kusaj(' ')">
+		</form>
+	</body>
+</html>
+</textarea>
+
+
+<textarea cols="150" rows="26">
+<html>
+	<head>
+		<script type="text/javascript">
+			function okno_zamknij_kusaj()
+			{
+				window.close()
+			}
+		</script>
+	</head>
+
+	<body><p>
+		JavaScript powsta³ w 1995 roku na mocy porozumienia z firm¹ Sun Microsystems.<br />
+		JavaScript jest jêzykiem skryptowym (interpretowanym). Nie musi zostaæ skompilowany do kodu maszynowego, aby mo¿na by³o zobaczyæ efekty jego dzia³ania. Wystarczy nam do tego przegl¹darka internetowa, która ten jêzyk obs³uguje - czyli w zasadzie ka¿da z licz¹cych siê na rynku aplikacji.<br />
+		JavaScript jest wykonywany na kliencie u¿ytkownika za pomoc¹ przegl¹darki internetowej.<br />
+		Ze wzglêdów bezpieczeñstwa JavaScript ma znacznie ograniczone uprawnienia dostêpu do zasobów komputera, przy u¿yciu którego przegl¹dana jest dana strona, a wszelkie odwo³ania do funkcji i obiektów wykonywane s¹ w trakcie wykonywania programu.<br />
+		JavaScript jest jêzykiem obiektowym, poniewa¿ jest bardziej przyjazny dla ludzi poprzez zastosowanie obiektów na podstawie wczeœniej zdefiniowanych klas.<br /></p>
+
+		<img src="obraz1.gif" /><br /><br />
+		<input type="button" value="zamknij okno" onclick="okno_zamknij_kusaj()"/>
+	</body>
+</html>
+</textarea>
