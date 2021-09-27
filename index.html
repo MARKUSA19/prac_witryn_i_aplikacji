@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>Marcin Kusaj - JS</title>
+		<meta charset="utf-8"></meta>
+		<script language="JavaScript">
+			function WinOpen1_kusaj()
+			{
+				window.open("przyklad1a.html","_blank")
+			}
+
+			function WinOpen2_kusaj()
+			{
+				window.open("zadanie2.html","_blank")
+			}
+
+			function WinOpen3_kusaj()
+			{
+				window.open("zadanie3.html","_blank")
+			}
+			
+			function show_alert_kusaj()
+			{
+				alert("Uwaga!")
+			}
+			
+			function show_confirm_kusaj()
+			{
+				var r=confirm("Naciśnij klawisz");
+				if (r==true)
+				{
+					document.write("Nacisnąłeś OK!");
+				}
+				
+				else
+				{
+					document.write("Nacisnąłeś Cancel!");
+				}
+			}
+			
+			function show_prompt_kusaj()
+			{
+				var name=prompt("Napisz imię","Imię Nazwisko");
+				if (name!=null && name!="")
+				{
+					document.write("Witaj " + name + "! jak się masz?");
+				}
+			}
+			
+			function WinOpen7_kusaj()
+			{
+				window.open("zadanie7.html","_blank")
+			}
+
+			function WinOpen1kod_kusaj()
+			{
+				window.open("przyklad1a_kod.html","_blank")
+			}
+		</script>
+	</head>
+
+	<body>
+		<center><span style="font-size:2cm;">Kusaj</span></center>
+
+		<hr />
+
+		<form>
+			Zadanie 1: <input type="button" name="przycisk" value="przykład 1a dzialanie" onclick="WinOpen1_kusaj(' ')">
+			<input type="button" name="przycisk" value="przykład 1a listing" onclick="WinOpen1kod_kusaj(' ')"><br />
+
+			Zadanie 2: <input type="button" name="przycisk" value="zadanie 2 dzialanie" onclick="WinOpen2_kusaj(' ')"><br />
+
+			Zadanie 3: <input type="button" name="przycisk" value="kusaj_z3" onclick="WinOpen3_kusaj(' ')"><br />
+			
+			Zadanie 4: <input type="button" name="przycisk" value="kusaj_z4" onclick="show_alert_kusaj()"><br />
+			
+			Zadanie 5: <input type="button" name="przycisk" value="kusaj_z5" onclick="show_confirm_kusaj()"><br />
+			
+			Zadanie 6: <input type="button" name="przycisk" value="kusaj_z6" onclick="show_prompt_kusaj()"><br />
+			
+			Zadanie 7: <input type="button" name="przycisk" value="kusaj_z7" onclick="WinOpen7_kusaj(' ')"><br />
+		</form>
+	</body>
+</html>
