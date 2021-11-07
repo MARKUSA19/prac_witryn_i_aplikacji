@@ -1,0 +1,46 @@
+<textarea rows="32" cols="120">
+<html>
+	<head>
+		<title>Zadanie 21</title>
+		<meta charset="utf-8"></meta>
+		<script language="JavaScript">
+			function D(a_kus,b_kus)
+			{
+		  		a_liczba=parseFloat(a_kus)
+ 				b_liczba=parseFloat(b_kus)
+ 			   D_wynik= Math.sqrt(Math.pow(a_liczba, 2) + Math.pow(a_liczba ,2))
+ 			   document.getElementsByName("Drabina")[0].value=D_wynik.toFixed(2);
+ 			   pokaz1.innerHTML="Drabina = "+D_wynik.toFixed(2)+" cm"+"<br>";
+			}
+
+			function K(a_kus,b_kus)
+			{
+   			a_liczba=parseFloat(a_kus)
+   		 	b_liczba=parseFloat(b_kus)
+   			K_wynik= Math.atan(a_liczba/b_liczba)*180/Math.PI
+    			document.getElementsByName("kat_kus")[0].value=K_wynik.toFixed(2);
+    			pokaz2.innerHTML="Kąt &#945; = "+K_wynik.toFixed(2)+"&#176;"+"<br>";
+			}
+ </script>
+	</head>
+
+	<body>
+		Obliczanie długości drabiny oraz jej kąta nachylenia <br><br>
+		<form name="formularz" action="..." onsubmit="D(this.d_kus.value,this.x_kus.value); K(this.d_kus.value,this.x_kus.value);return false">
+			Podaj wysokość =
+	  		<input size="6" name="d_kus">
+	  		Podaj X =
+	  		<input size="6" name="x_kus"><br><br>
+	  		<input TYPE="submit" Value="oblicz" ><br><br>
+	 		Drabina =
+	  		<input size="6" name="Drabina">
+	  		Kąt &#945; =
+	  		<input size="6" name="kat_kus">
+		</form>
+		<table>
+			<tr id="pokaz1"></tr>
+			<tr id="pokaz2"></tr>
+		</table>
+	</body>
+</html>
+</textarea>
