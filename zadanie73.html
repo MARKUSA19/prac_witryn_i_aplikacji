@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Zadanie 73</title>
+		<meta charset="utf-8"></meta>
+
+		<script language="JavaScript">
+			function wielomian_kus(i)
+			{
+			  	if(i%5==0)
+			  	{
+			  		confirm("Aby kontynuować, naciśnij dowolny przycisk...");
+			  	}
+
+			  	w=i*i+i+41;
+			  	document.write("i="+i+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+"w("+i+")="+w+"<br>");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div style="color:red;font-size:42px;">
+			<script language="JavaScript">
+		  		for(i=0; i<=39; i++)
+  	  			{
+			  		wielomian_kus(i);
+		  	 	}
+			</script>
+		</div>
+	</body>
+</html>

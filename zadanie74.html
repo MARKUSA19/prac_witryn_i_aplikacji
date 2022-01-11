@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Zadanie 74</title>
+		<meta charset="utf-8"></meta>
+
+		<script language="JavaScript">
+			function wielomian_kus(i)
+			{
+			  	if(i%3==0)
+			  	{
+			  		confirm("Aby kontynuować, naciśnij dowolny przycisk...");
+			  	}
+
+			  	pierw2_kus = Math.sqrt(i).toFixed(2);
+				pierw4_kus = Math.sqrt(Math.sqrt(i)).toFixed(2);
+
+			  	document.write("i="+i+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp pierw_2("+i+") = "+pierw2_kus+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp pierw_4("+i+") = "+pierw4_kus+"<br>");
+			}
+		</script>
+	</head>
+
+	<body>
+		<div style="color:red;font-size:42px;">
+			<script language="JavaScript">
+		  		for(i=12; i<=27; i++)
+  	  			{
+			  		wielomian_kus(i);
+		  	 	}
+			</script>
+		</div>
+	</body>
+</html>
