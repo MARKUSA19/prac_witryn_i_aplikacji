@@ -1,0 +1,29 @@
+<html>
+<head>
+	<title>Zadanie 78</title>
+	<meta charset="utf-8"></meta>
+   <script language="JavaScript">
+   	var liczba = prompt("R = ", "")
+      var R = parseFloat(liczba);
+      var liczba_kus = 0;
+      for (var i = -Math.round(R) - 1; i <= Math.round(R) + 1; i++)
+		{
+      	for (var j = -Math.round(R) - 1; j <= Math.round(R) + 1; j++)
+			{
+         	d = Math.sqrt(i * i + j * j);
+
+            if (d <= R)
+				{
+            	liczba_kus++;
+               document.write("(" + i + " , " + j + ")" + "  ");
+            }
+         }
+         document.write("<br />");
+      }
+
+      document.write("Ilość punktów kratowych w kole wynosi: "+liczba_kus+"<br />");
+    </script>
+</head>
+<body>
+</body>
+</html>
